@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Declaració del tipus de document HTML5 -->
+<html lang="ca">
+<head>
+  <!-- Codificació de caràcters UTF-8 per a compatibilitat -->
+  <meta charset="UTF-8" />
+  <!-- Títol que es mostrarà a la pestanya del navegador -->
+  <title>Healthy Smile – Especial Halloween</title>
+  <!-- Enllaç a la fulla d'estil CSS per a l'estilització -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Biblioteques de MediaPipe per a la detecció facial -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <!-- Enllaç al fitxer de JavaScript principal que controla la lògica -->
+  <script defer src="sketch.js"></script>
+</head>
+<body>
+  <!-- Contenidor principal de la pàgina -->
+  <div class="container">
+    <!-- Capçalera amb logo i títol -->
+    <header>
+      <img id="logoHS" src="assets/logo_2.webp" alt="Logo Healthy Smile" />
+      <h1>Healthy Smile – Especial Halloween</h1>
+      <!-- Indicacions per a l'usuari -->
+      <div id="instructionText">Obre la boca per activar les partícules de Halloween!</div>
+    </header>
+    <main>
+      <!-- Botó per començar el sistema de detecció -->
+      <button id="startButton" class="btn-style">Comença</button>
+      <!-- Contenidor on s'injectarà el canvas per la càmera -->
+      <div class="canvas-wrapper" id="canvasWrapper"></div>
+      <!-- Botó per tancar l’aplicació -->
+      <button id="closeButton" class="btn-style">Tancar aplicació</button>
+    </main>
+  </div>
+</body>
+</html>
