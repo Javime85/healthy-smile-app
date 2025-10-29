@@ -41,4 +41,4 @@ Aquest projecte està llicenciat sota la MIT License.
 ## Autor
 
 Javier Villalón Mena  
-PAC 2 — Desenvolupament d’Aplicacions Interactives, UOC.
+Repte 2 — Desenvolupament d’Aplicacions Interactives, UOC.
