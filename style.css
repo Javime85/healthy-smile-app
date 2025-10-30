@@ -1,94 +1,165 @@
+/* Estils per al cos del document */
 body {
+  /* Color de fons amb gradient diagonal */
   background: linear-gradient(135deg, #1b0026 0%, #2a0039 50%, #3f004d 100%);
+  /* Família de fonts prioritzant Montserrat, després Arial i finalment qualsevol sans-serif */
   font-family: 'Montserrat', Arial, sans-serif;
+  /* Color del text */
   color: #ffb347;
+  /* Alçada mínima per ocupar tota la pantalla */
   min-height: 100vh;
+  /* Elimina marges per defecte */
   margin: 0;
+  /* Evita scroll horitzontal */
   overflow-x: hidden;
+  /* És necessari per posicionament relatiu d'elements fills */
   position: relative;
 }
 
+/* Contenidor principal centrat amb màxim ample i estil de fons */
 .container {
+  /* Amplada màxima de 700px */
   max-width: 700px;
+  /* Centrat horitzontal amb marge automàtic i marge superior */
   margin: 30px auto;
+  /* Padding intern per espaiat */
   padding: 36px 24px 24px 24px;
+  /* Bordes arrodonits */
   border-radius: 16px;
+  /* Fons translúcid amb color morat */
   background: rgba(40,0,55,0.30);
+  /* Ombra lluminoses al voltant per donar profunditat */
   box-shadow: 0 0 32px 8px #5c1299a0;
+  /* Text centrat */
   text-align: center;
 }
 
+/* Estils per al logo dins l'encapçalament */
 header img#logoHS {
+  /* Amplada màxima del logo */
   max-width: 120px;
+  /* Marges superiors i inferiors per separació */
   margin-bottom: 12px;
   margin-top: 6px;
+  /* Efecte de sombra lluminosa al voltant */
   filter: drop-shadow(0 0 10px #e291ffcc);
+  /* Fons específic per ressaltar */
   background: #39104e;
+  /* Bordes arrodonits per suavitzar la imatge */
   border-radius: 20px;
+  /* Espaiat intern per destacar el logo */
   padding: 8px;
 }
 
+/* Títol principal a header */
 header h1 {
+  /* Color fort i vistós */
   color: #ff941b;
+  /* Gruix de la font (negreta) */
   font-weight: 700;
+  /* Tamany del text */
   font-size: 2.4rem;
+  /* Marges superiors i inferiors */
   margin: 10px 0 10px 0;
+  /* Ombra de text colorida per destacar */
   text-shadow: 0 0 16px #ffb347, 0 2px 8px #e07aff;
 }
 
+/* Text d'instrucció sota el títol */
 header #instructionText {
+  /* Color clar i suau */
   color: #ffe1c3;
+  /* Tamany de lletra més petit */
   font-size: 1.15rem;
+  /* Text en itàlica */
   font-style: italic;
+  /* Marges inferior per distanciar */
   margin-bottom: 10px;
+  /* Ombra lleugera per contrastar */
   text-shadow: 0 0 6px #e07aff99;
 }
 
+/* Estils per a l'element main */
 main {
+  /* Margen superior per separar del header */
   margin-top: 16px;
 }
 
+/* Botons amb estil vistós i interacció */
 .btn-style {
+  /* Gradient de colors per botó */
   background: linear-gradient(90deg, #ff941b, #e607a7 90%);
+  /* Color del text */
   color: #fff;
+  /* Sense bord */
   border: none;
+  /* Bordes arrodonits */
   border-radius: 16px;
+  /* Tamany font destacat */
   font-size: 1.2rem;
+  /* Font consistent amb la resta */
   font-family: 'Montserrat', Arial, sans-serif;
+  /* Font en negreta */
   font-weight: bold;
+  /* Relleno interno para confort */
   padding: 14px 38px;
+  /* Marges per separar ante i després */
   margin-bottom: 18px;
   margin-top: 5px;
+  /* Cursor de punter per indicar clicable */
   cursor: pointer;
+  /* Ombra que dona volum al botó */
   box-shadow: 0 4px 20px #e361b1;
+  /* Animacions suaus al canviar estat */
   transition: background 0.2s, transform 0.12s;
+  /* Ombra del text per millor llegibilitat */
   text-shadow: 0 2px 6px #0009;
+  /* Mostrar com a bloc en línia */
   display: inline-block;
 }
 
+/* Canvi d'estil quan el punter està sobre el botó */
 .btn-style:hover {
+  /* Gradient amb colors més clars i impactants */
   background: linear-gradient(90deg, #ffda83 10%, #e607a7 90%);
+  /* Canvi del color del text */
   color: #570040;
+  /* Escalar lleugerament per efecte de zoom */
   transform: scale(1.07);
 }
 
+/* Contenidor que envolta el canvas per centrar i estil */
 .canvas-wrapper {
+  /* Flexbox per centrar contingut horitzontal i verticalment */
   display: flex;
   justify-content: center;
   align-items: center;
+  /* Margen vertical per separar */
   margin: 16px auto;
+  /* Ombra que dóna profunditat i lluminositat */
   box-shadow: 0 0 36px 10px #ffb54733, 0 2px 24px #bd49c4aa;
+  /* Bordes arrodonits per suavitzar */
   border-radius: 22px;
+  /* Fons translúcid */
   background: rgba(20,0,40,0.21);
+  /* Relleno interno */
   padding: 8px;
+  /* Amplada automàtica segons el contingut */
   max-width: fit-content;
 }
 
+/* Estils per a l'element canvas */
 canvas {
+  /* Bordes arrodonits */
   border-radius: 18px;
+  /* Borde gruixut i de color viu */
   border: 6px solid #ff941b;
+  /* Fons fosc */
   background: #1b0025;
-  max-width: 100%;
+  /* Ombra del canvas */
   box-shadow: 0 0 28px #ff941b99;
+  /* Centrat automàticament */
   margin: 0 auto;
+  /* Amplada màxima adaptable */
+  max-width: 100%;
 }
